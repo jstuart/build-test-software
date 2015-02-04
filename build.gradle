@@ -1,1 +1,8 @@
 apply plugin: 'java'
+
+version = 1.0
+
+task dist(type: Zip) {
+    from 'build/libs'
+    into ('dist')
+}
