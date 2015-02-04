@@ -1,9 +1,9 @@
 apply plugin: 'java'
 
-baseName = test-software
 version = 1.0
 
 task dist(type: Zip) {
+    baseName = 'test-software'
     from 'build/libs'
     into ('dist')
 }
